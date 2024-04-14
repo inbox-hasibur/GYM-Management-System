@@ -1,7 +1,5 @@
-
-
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -16,7 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/flaticon.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
@@ -45,12 +45,12 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about-us.html">About Us</a></li>
-                
-                
+
+
                 li><a href="./class-details.html">Classes</a></li>
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./team.html">Our Team</a></li>
-                   
+
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -59,7 +59,7 @@
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-youtube-play"></i></a>
-          <a href="./signin.php"><i class="  fa fa-user"></i></a>
+            <a href="./signin.php"><i class="  fa fa-user"></i></a>
         </div>
     </div>
     <!-- Offcanvas Menu Section End -->
@@ -80,10 +80,10 @@
                         <ul>
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./about-us.html">About Us</a></li>
-                              
+
                             <li><a href="./services.html">Services</a></li>
                             <li><a href="./joinourteam.html">Join Our Team</a></li>
-                            
+
                             <li class="active"><a href="./contact.html">Contact</a></li>
                         </ul>
                     </nav>
@@ -97,7 +97,7 @@
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-youtube-play"></i></a>
-                          <a href="./signin.php"><i class="  fa fa-user"></i></a>
+                            <a href="./signin.php"><i class="  fa fa-user"></i></a>
                         </div>
                     </div>
                 </div>
@@ -115,9 +115,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb-text">
-                      <h2>SIGN UP</h2>
+                        <h2>SIGN UP</h2>
                         <h2><br>
-                          as Standard membership</h2>
+                            as Standard membership</h2>
                     </div>
                 </div>
             </div>
@@ -129,60 +129,64 @@
     <section class="contact-section spad">
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-lg-6 col-xl-6 offset-xl-3">
                     <div class="leave-comment">
-                        <form action = "<?php htmlspecialchars($_SERVER["PHP_SELF"])?>"  method = "post">
+                        <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
                             <input type="text" name="Name" placeholder="Name">
                             <input type="text" name="Email" placeholder="Email">
                             <input type="password" name="Password" placeholder="Password">
-                            
-							<div class="section-title chart-calculate-title">
-                        <span></span>
-                        <h2>YOUR BODY INFORMATION</h2>
-                    </div>
-                    <div class="chart-calculate-form">
-                        
-                        
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" name="Height" placeholder="Height / cm">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="text" name="Weight" placeholder="Weight / kg">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="text" name="Age" placeholder="Age">
-                                </div>
-                                <div class="col-sm-6">
 
-                                <p>Gender:</p>
-                                <label for="male">Male</label>
-                                <input type="radio"  id="male" name="Gender" value="male">
-                                <label for="female">Female</label>
-                                <input type="radio" id="female" name="Gender" value="female">
-                                </div>
-                                <div class="col-lg-12">
-                                    <button type="submit" name="submit">Submit</button>
-                                </div>
+                            <div class="section-title chart-calculate-title">
+                                <span></span>
+                                <h2>YOUR BODY INFORMATION</h2>
                             </div>
-							
+                            <div class="chart-calculate-form">
+
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="Height" placeholder="Height / cm" class="text-white">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" name="Weight" placeholder="Weight / kg">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="number" name="Age" placeholder="Age">
+                                    </div>
+                                    <div class="col-sm-6 d-flex align-items-center gap-3">
+
+                                        <p class="mb-0">Gender:</p>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <input type="radio" id="male" name="Gender" value="male">
+                                            <label for="male" class="text-white mb-0">Male</label>
+                                        </div>
+                                        <div class="d-flex align-items-center gap-2">
+                                            <input type="radio" id="female" name="Gender" value="female">
+                                            <label for="female" class="text-white mb-0">Female</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-12">
+                                        <button type="submit" name="submit">Submit</button>
+                                    </div>
+                                </div>
+
                         </form>
                     </div>
-					
-					
-                    
-                    </div>
-                </div>
+
+
+
                 </div>
             </div>
-            
+        </div>
+        </div>
+
         </div>
     </section>
     <!-- Contact Section End -->
 
     <!-- Get In Touch Section Begin -->
-    
+
     <!-- Get In Touch Section End -->
 
     <!-- Footer Section Begin -->
@@ -200,7 +204,7 @@
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-youtube-play"></i></a>
-                          <a href="./signin.php"><i class="  fa fa-user"></i></a>
+                            <a href="./signin.php"><i class="  fa fa-user"></i></a>
                             <a href="#"><i class="fa  fa-envelope-o"></i></a>
                         </div>
                     </div>
@@ -251,8 +255,10 @@
                 <div class="col-lg-12 text-center">
                     <div class="copyright-text">
                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
             </div>
@@ -273,7 +279,9 @@
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/jquery.barfiller.js"></script>
@@ -312,7 +320,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Prepare and execute the SQL statement
         $sql = "INSERT INTO members (Name, Email, Password, Height, Weight, Age, Gender, Membership, Facilities)
                 VALUES ('$name', '$email', '$password', '$height', '$weight', '$age', '$gender', '$membership', '$facilities')";
-        
+
         // Attempt to execute the SQL statement
         if (mysqli_query($conn, $sql)) {
             echo "You are registered successfully!";

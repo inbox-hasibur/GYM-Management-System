@@ -2486,7 +2486,7 @@ ol {
 	margin-bottom: 40px;
 }
 
-.leave-comment form input {
+.leave-comment form input:not(Input[type="radio"]) {
 	font-size: 13px;
 	color: #ffffff;
 	width: 100%;

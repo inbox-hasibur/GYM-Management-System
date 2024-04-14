@@ -18,7 +18,7 @@ $facilities = $_SESSION['facilities'];
 ?>
 
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -147,9 +147,9 @@ $facilities = $_SESSION['facilities'];
                 <div class="col-lg-6 col-xl-6 offset-xl-3">
                     <div class="leave-comment">
                         <form action = "<?php htmlspecialchars($_SERVER["PHP_SELF"])?>"  method = "post">
-                            <input type="text" name="Name" placeholder="Name">
-                            <input type="text" name="Email" placeholder="Email">
-                            <input type="password" name="Password" placeholder="Password">
+                            <input type="text" name="Name" value="<?php echo $name; ?>" placeholder="Name">
+                            <input type="text" name="Email" value="<?php echo $email ?>" placeholder="Email">
+                            <!-- <input type="password" name="Password" placeholder="Password"> -->
                             
 							<div class="section-title chart-calculate-title">
                         <span></span>
@@ -160,13 +160,13 @@ $facilities = $_SESSION['facilities'];
                         
                             <div class="row">
                                 <div class="col-sm-6">
-                                    <input type="text" name="Height" placeholder="Height / cm">
+                                    <input type="text" name="Height" value="<?php echo $height ?>" placeholder="Height / cm">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" name="Weight" placeholder="Weight / kg">
+                                    <input type="text" name="Weight" value="<?php echo $weight ?>" placeholder="Weight / kg">
                                 </div>
                                 <div class="col-sm-6">
-                                    <input type="text" name="Age" placeholder="Age">
+                                    <input type="text" name="Age" value="<?php echo $age ?>" placeholder="Age">
                                 </div>
                                 
                                 </div>

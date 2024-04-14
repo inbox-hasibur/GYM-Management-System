@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -16,7 +14,9 @@
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/flaticon.css" type="text/css">
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
@@ -45,7 +45,7 @@
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about-us.html">About Us</a></li>
-                  
+
                 <li><a href="./services.html">Services</a></li>
                 <li><a href="./team.html">Our Team</a></li>
                 <li><a href="#">Pages</a>
@@ -67,7 +67,7 @@
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-youtube-play"></i></a>
-          <a href="./signin.php"><i class="  fa fa-user"></i></a>
+            <a href="./signin.php"><i class="  fa fa-user"></i></a>
         </div>
     </div>
     <!-- Offcanvas Menu Section End -->
@@ -88,7 +88,7 @@
                         <ul>
                             <li><a href="./index.html">Home</a></li>
                             <li><a href="./about-us.html">About Us</a></li>
-                              
+
                             <li><a href="./services.html">Services</a></li>
                             <li><a href="./joinourteam.html">Join Our Team</a></li>
                             <li class="active"><a href="./contact.html">Contact</a></li>
@@ -104,7 +104,7 @@
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-youtube-play"></i></a>
-                          <a href="./signin.php"><i class="  fa fa-user"></i></a>
+                            <a href="./signin.php"><i class="  fa fa-user"></i></a>
                         </div>
                     </div>
                 </div>
@@ -122,9 +122,9 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb-text">
-                      <h2>SIGN UP</h2>
+                        <h2>SIGN UP</h2>
                         <h2><br>
-                          as Medic</h2>
+                            as Medic</h2>
                     </div>
                 </div>
             </div>
@@ -136,69 +136,79 @@
     <section class="contact-section spad">
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-lg-6 col-xl-6 offset-xl-3">
                     <div class="leave-comment">
-                    <form action = "<?php htmlspecialchars($_SERVER["PHP_SELF"])?>"  method = "post">
+                        <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
                             <input type="text" name="Name" placeholder="Name">
                             <input type="text" name="Email" placeholder="Email">
                             <input type="password" name="Password" placeholder="Password">
-                            
-							<div class="section-title chart-calculate-title">
-                        <span></span>
-                        <h2>YOUR BODY INFORMATION</h2>
-                    </div>
-                    <div class="chart-calculate-form">
-                        
-                        
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <input type="text" name="Experience" placeholder="Experience">
-                                </div>
 
-                                <div class="col-sm-6">
-                                    <input type="text" name="Age" placeholder="Age">
-                                </div>
-                                <div class="col-sm-6">
-                                <p>Schedule</p>
-                                <div class="col-lg-12 schedule-radio">
-                                <label for="morning">9:00 AM - 12:00 PM</label>
-                                <input type="radio" id="morning" name="Schedule" value="9am-12pm">
-                                <label for="afternoon">12:00 PM - 3:00 PM</label>
-                                <input type="radio" id="afternoon" name="Schedule" value="12pm-3pm">
-                                <label for="evening">3:00 PM - 6:00 PM</label>
-                                <input type="radio" id="evening" name="Schedule" value="3pm-6pm">
-                                </div>
-                                </div>
-                                <div class="col-sm-6">
-                                <p>Gender:</p>
-                                <label for="male">Male</label>
-                                <input type="radio"  id="male" name="Gender" value="male">
-                                <label for="female">Female</label>
-                                <input type="radio" id="female" name="Gender" value="female">
-                                </div>
+                            <div class="section-title chart-calculate-title">
+                                <span></span>
+                                <h2>YOUR BODY INFORMATION</h2>
+                            </div>
+                            <div class="chart-calculate-form">
+
+
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <input type="text" name="Experience" placeholder="Experience">
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <input type="text" name="Age" placeholder="Age">
+                                    </div>
+                                    <div class="col-sm-6 text-white ">
+                                        <p>Schedule</p>
+                                        <div class="col-lg-12 schedule-radio">
+                                            <div>
+                                                <input type="radio" id="morning" name="Schedule" value="9am-12pm">
+                                                <label for="morning">9:00 AM - 12:00 PM</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="afternoon" name="Schedule" value="12pm-3pm">
+                                                <label for="afternoon">12:00 PM - 3:00 PM</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" id="evening" name="Schedule" value="3pm-6pm">
+                                                <label for="evening">3:00 PM - 6:00 PM</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 text-white">
+                                        <p>Gender:</p>
+                                        <div>
+                                            <input type="radio" id="male" name="Gender" value="male">
+                                            <label for="male">Male</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="female" name="Gender" value="female">
+                                            <label for="female">Female</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-lg-12">
                                     <button type="submit" name="submit">Submit</button>
                                 </div>
                             </div>
-							
+
                         </form>
                     </div>
-					
-					
-                    
-                    </div>
-                </div>
+
+
+
                 </div>
             </div>
-            
+        </div>
+        </div>
+
         </div>
     </section>
     <!-- Contact Section End -->
 
     <!-- Get In Touch Section Begin -->
-    
+
     <!-- Get In Touch Section End -->
 
     <!-- Footer Section Begin -->
@@ -216,7 +226,7 @@
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-youtube-play"></i></a>
-                          <a href="./signin.php"><i class="  fa fa-user"></i></a>
+                            <a href="./signin.php"><i class="  fa fa-user"></i></a>
                             <a href="#"><i class="fa  fa-envelope-o"></i></a>
                         </div>
                     </div>
@@ -267,8 +277,10 @@
                 <div class="col-lg-12 text-center">
                     <div class="copyright-text">
                         <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                            Copyright &copy;<script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                     </div>
                 </div>
             </div>
@@ -289,7 +301,9 @@
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/jquery.barfiller.js"></script>
@@ -317,7 +331,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $age = filter_input(INPUT_POST, "Age", FILTER_SANITIZE_SPECIAL_CHARS);
     $gender = filter_input(INPUT_POST, "Gender", FILTER_SANITIZE_SPECIAL_CHARS);
     $profession = "Medic";
-    
+
 
     // Check if required fields are not empty
     if (empty($name) || empty($email) || empty($password) || empty($Experience) || empty($schedule) || empty($age) || empty($gender) || empty($profession)) {
